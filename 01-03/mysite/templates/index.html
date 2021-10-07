@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" real ="stylesheet">
+</head>
+<body style="padding:2px">
+    <form action="" method="post">
+        {% csrf_token %}
+        <input type="text" name="nama" class="form-control"><br>
+        <button type="submit" class="btn btn-primary" >Simpan</button>
+    </form>
+    <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>Nama</td>
+                    <td>Actions</td>
+                </tr>
+            </thead>
+        <tbody>
+            {% for d in datahtml%}
+
+            <tr>
+                <td>{{d.id}}</td>
+                <td>{{d.nama}}</td>
+                <td>
+                    <a href="" class="btn-succes">Views</a>
+                    <a href="" class="btn-warning">Edit</a>
+                    <a href="" class="btn-danger">Dalate</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+        </table>
+    </div>
+</body>
+</html>
