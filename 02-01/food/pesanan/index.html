@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block conntent %}
+<div class="p-5">
+    <form action="" method="post">
+        {% csrf_token %}
+        <label>Makanan</label>
+        <select class="form-select" name= "makanan">
+            <option selected>Pilih</option>
+            {% for d in dataMakanan %}
+            <option value="{{d.id}}">{{d.nama}}</option>
+            {% endor %}
+        </select>
+        <label>jumlah</label>
+        <input type="name=jumlah_makanan" class="form.control">
+        <label>Minuman</label>
+        <select class="form-select" name= "makanan">
+            <option selected>Pilih</option>
+            {% for d in dataMinuman %}
+            <option value="{{d.id}}">{{d.nama}}</option>
+            {% endor %}
+            
+    </form>
+</div>

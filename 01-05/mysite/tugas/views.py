@@ -8,7 +8,7 @@ def index(request):
         models.tugas.objects.create(nama=input)
         print(input)
 
-    data = models.tugas.objects.all()
+    data = models.tugas.objects.all()POST
     return render(request, "index.html.", {
         "datahtml": data,
     })
