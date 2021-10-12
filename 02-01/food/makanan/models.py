@@ -3,12 +3,12 @@ from django.db.models.base import Model
 from django.db.models.fields import CharField
 # Create your models here.
 class makanan(models.Model):
-    jenis = models. charlField(max_length=255)   
+    jenis = models.charlField(max_length=255)   
     nama = charField(max_lenght=255)
     harga = models.interField()
 
 class minuman(models.Model):
-    jenis = models. charlField(max_length=255)   
+    jenis = models.charlField(max_length=255)   
     nama = charField(max_lenght=255)
     harga = models.interField()
 
