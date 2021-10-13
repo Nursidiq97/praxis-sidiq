@@ -25,8 +25,8 @@ def readMinuman(request):
     })
 def readPesanan(request):
     if request.POST:
-        get_makanan = request.POST["makanan"]
-        get_makanan = request.POST["minuman"]
+        get_makanan = request.POST["makanan"] 
+        get_makanan = request.POST["minuman"] 
         get_jumlah_makanan = request.POST["makanan"]
         get_jumlah_minuman = request.POST["makanan"]
 
