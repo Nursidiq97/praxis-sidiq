@@ -115,7 +115,7 @@ def detail(request, id):
         "detailData": data,
     })
 
-def edit(request, id):
+def editminuman(request, id):
     if request.POST:
          input = request.POST["nama"]
          print(input)
